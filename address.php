@@ -16,7 +16,7 @@ function getTransactionListForCustomerRequest($customerProfileId)
     // Set the transaction's refId
     $refId = 'ref' . time();
 
-    // Old Authentication Key 15a827cd007eeeeda43333533f92db6408;
+    // Old Authentication Key=15a827cd007eeeeda43333533f92db6408;
     $request = new AnetAPI\GetTransactionListForCustomerRequest();
     $request->setMerchantAuthentication($merchantAuthentication);
     $request->setCustomerProfileId($customerProfileId);
